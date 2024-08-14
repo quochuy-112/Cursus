@@ -9,6 +9,7 @@ public class Account {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long accountId;
 
+    @Column(unique=true, nullable=false)
     private String accountName;
 
     private String password;
